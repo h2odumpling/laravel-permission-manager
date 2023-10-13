@@ -1,0 +1,42 @@
+{
+    "name": "h2o-work/laravel-permission-manager",
+    "description": "Permission Manager for Laravel Permission",
+    "keywords": [
+        "h2o-work",
+        "laravel",
+        "permission",
+        "permissions"
+    ],
+    "homepage": "https://github.com/h2odumpling/laravel-permission-manager",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "H2odumpling",
+            "email": "h2odumpling@vip.qq.com",
+            "homepage": "https://github.com/h2odumpling",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "spatie/laravel-permission": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "H2o\\PermissionManager\\": "src"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "H2o\\PermissionManager\\PermissionManagerServiceProvider"
+            ]
+        }
+    }
+}
