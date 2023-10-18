@@ -4,7 +4,7 @@ namespace H2o\PermissionManager\Commands;
 
 
 use Illuminate\Console\Command;
-use H2o\PermissionManager\PermissionManager\PermissionManager;
+use H2o\PermissionManager\Manager\PermissionManager;
 
 class PermissionMigrateCommand extends Command
 {
