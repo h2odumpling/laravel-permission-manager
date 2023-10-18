@@ -10,6 +10,10 @@ class PermissionMiddleware
 {
     public function handle($request, Closure $next)
     {
+        if(!in_array(env('APP_ENV'), config('h2o-permission.active_env'))){
+            return $next($request);
+        }
+
         if (app('auth')->guest()) {
             throw new UnauthorizedException();
         }

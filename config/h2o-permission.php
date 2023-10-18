@@ -7,4 +7,10 @@ return [
     'middlewares' => [
         'permission'
     ],
+    
+    'active_env' => [
+        'prod',
+        'pre',
+        'test',
+    ],
 ];
