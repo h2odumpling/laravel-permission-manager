@@ -1,6 +1,6 @@
 <?php
 
-namespace H2o\PermissionManagerManager\Middlewares;
+namespace H2o\PermissionManager\Middlewares;
 
 use Closure;
 use H2o\PermissionManager\Exceptions\PermissionDefinedException;
